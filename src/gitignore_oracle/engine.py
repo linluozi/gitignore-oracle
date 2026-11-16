@@ -233,8 +233,11 @@ class GitIgnore:
                     if dec.ignored and not dec.via and (
                         dec.source != rule.source or dec.line != rule.line
                     ):
+                        kind = ("dead_by_later_ignore"
+                                if dec.source == rule.source and dec.line > rule.line
+                                else "dead_by_other_ignore")
                         findings.append({
-                            "kind": "dead_by_later_ignore",
+                            "kind": kind,
                             "rule": rule.to_dict(),
                             "witness": full,
                             "decided_by": {

@@ -90,7 +90,7 @@ JSON is `evidence/differential.json`.
 | Provenance mismatches (source + line + pattern) | **0** |
 | Dead negation rules found | **53** (36 parent-excluded, 17 overridden by a later ignore) |
 | Dead rules confirmed by `git check-ignore` | **53 / 53** |
-| Engine throughput (median of 3 passes) | **11,098 decisions/s** |
+| Engine throughput (median of 3 passes) | **10,666 decisions/s** |
 
 Reproduce:
 
@@ -145,14 +145,14 @@ rather than a fixed claim.
 | D1 | Decision parity on ≥1,000 unique paths | 4,062 / 4,062 (2,817 generated + 1,245 real), 0 mismatches | `python3 tools/run_evidence.py` + `tools/check_real_repos.py` |
 | D2 | Provenance parity (file + line + pattern) | 942 / 942 matched paths agree | same |
 | D3 | Every dead-rule claim confirmed by git | 53 / 53 | same |
-| D4 | Unit + integration tests | 31 passed | `python3 -m pytest -q` |
+| D4 | Unit + integration tests | 32 passed | `python3 -m pytest -q` |
 | D5 | Clean clone install + first README command | verified (see below) | `git clone ... && pip install -e ".[test]"` |
 
 ## Tests
 
 ```bash
 .venv/bin/python -m pytest -q
-# 31 passed
+# 32 passed
 ```
 
 Coverage includes wildcards that must not cross `/`, all three `**` positions,

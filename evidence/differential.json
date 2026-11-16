@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T18:07:34.358874+00:00",
+  "generated_at": "2026-11-16T18:18:33.617690+00:00",
   "python": "3.12.3",
   "git": "git version 2.43.0",
   "kernel": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
@@ -343,11 +343,11 @@
   },
   "throughput": {
     "passes": 3,
-    "decisions_per_sec_median": 11098.3,
+    "decisions_per_sec_median": 10666.2,
     "decisions_per_sec_samples": [
-      11310.3,
-      11098.3,
-      10350.2
+      10666.2,
+      10856.7,
+      10449.9
     ]
   },
   "counterexample": {

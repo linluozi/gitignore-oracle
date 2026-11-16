@@ -97,6 +97,17 @@ def test_info_exclude_lowest_precedence(tmp_path):
     assert gi.check("other.log").source == ".git/info/exclude"
 
 
+def test_audit_detects_cross_file_override(tmp_path):
+    make(tmp_path, {
+        ".gitignore": "!sub/x.txt\n",
+        "sub/.gitignore": "x.txt\n",
+        "sub/x.txt": "",
+    })
+    report = GitIgnore(tmp_path).audit()
+    kinds = {(f["kind"], f["witness"]) for f in report["findings"]}
+    assert ("dead_by_other_ignore", "sub/x.txt") in kinds
+
+
 def test_audit_finds_dead_negations(tmp_path):
     make(tmp_path, {
         ".gitignore": "*.log\n!keep.log\nbuild/\n!build/keep.txt\ndocs/\n!docs/ok.md\n",

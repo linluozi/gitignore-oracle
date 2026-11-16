@@ -71,7 +71,7 @@ print(d.source, d.line, d.pattern)   # .gitignore 3 build/
 print(d.reason)                      # ignored via excluded parent directory ...
 ```
 
-## Evidence (all numbers produced by `tools/run_evidence.py`)
+## Evidence (all numbers produced by `tools/run_evidence.py` and `tools/check_real_repos.py`)
 
 `tools/run_evidence.py` builds 16 deterministic **real git repositories**
 (real files, real nested `.gitignore` files, `git init`), enumerates every file

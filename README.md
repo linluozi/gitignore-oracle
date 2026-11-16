@@ -99,6 +99,34 @@ Reproduce:
 git --version                                  # recorded in the JSON
 ```
 
+### External corpus: three real upstream repositories
+
+The same comparison was run on real clones of three Python projects, pinned at
+the HEADs below. The clones are throwaway; the script creates representative
+ignored artifacts (`.pyc`, `build/`, `.venv/`, `.pytest_cache/`, coverage files,
+editor dirs) so the upstream `.gitignore` files have real work to do. Every file
+and directory is then compared with git, including provenance.
+
+| Upstream | HEAD | Paths | Matched (ignored / re-included) | Mismatches |
+| --- | --- | --- | --- | --- |
+| `psf/requests` | `3c7baaa05ab4` | 188 | 34 (34 / 0) | 0 |
+| `pallets/flask` | `49943b5a9441` | 305 | 16 (16 / 0) | 0 |
+| `pytest-dev/pytest` | `50234b4e6700` | 752 | 34 (23 / 11) | 0 |
+| **Total** | | **1,245** | **84** | **0** |
+
+```bash
+mkdir -p /tmp/gio-real && cd /tmp/gio-real
+git clone --depth=1 git@github-linluozi:psf/requests.git requests
+git clone --depth=1 git@github-linluozi:pallets/flask.git flask
+git clone --depth=1 git@github-linluozi:pytest-dev/pytest.git pytest
+cd /path/to/gitignore-oracle
+.venv/bin/python tools/check_real_repos.py --root /tmp/gio-real
+# writes evidence/real_repos.json
+```
+
+Combined with the generated corpus, that is **4,062 unique paths** with zero
+decision and zero provenance mismatches.
+
 The engine was also run against this repository's own work tree (2,220 paths,
 including a populated `.venv`) with **0 mismatches**:
 
@@ -114,7 +142,7 @@ rather than a fixed claim.
 
 | Gate | Requirement | Result | Reproduce |
 | --- | --- | --- | --- |
-| D1 | Decision parity on ≥1,000 unique paths | 2,817 / 2,817, 0 mismatches | `python3 tools/run_evidence.py` |
+| D1 | Decision parity on ≥1,000 unique paths | 4,062 / 4,062 (2,817 generated + 1,245 real), 0 mismatches | `python3 tools/run_evidence.py` + `tools/check_real_repos.py` |
 | D2 | Provenance parity (file + line + pattern) | 942 / 942 matched paths agree | same |
 | D3 | Every dead-rule claim confirmed by git | 53 / 53 | same |
 | D4 | Unit + integration tests | 31 passed | `python3 -m pytest -q` |

@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-11-16T18:14:06.347056+00:00",
+  "git": "git version 2.43.0",
+  "note": "clones are throwaway; representative ignored artifacts are created locally",
+  "repos": [
+    {
+      "dir": "requests",
+      "upstream": "psf/requests",
+      "head": "3c7baaa05ab4aa49cc819ce3a819d260de19c157",
+      "paths": 188,
+      "files": 150,
+      "dirs": 38,
+      "git_matched": 34,
+      "git_ignored": 34,
+      "mismatches": 0,
+      "witnesses": []
+    },
+    {
+      "dir": "flask",
+      "upstream": "pallets/flask",
+      "head": "49943b5a94413a530761350f04e896f76e8d620e",
+      "paths": 305,
+      "files": 246,
+      "dirs": 59,
+      "git_matched": 16,
+      "git_ignored": 16,
+      "mismatches": 0,
+      "witnesses": []
+    },
+    {
+      "dir": "pytest",
+      "upstream": "pytest-dev/pytest",
+      "head": "50234b4e670064c42a4c29cb6258115a2079ba4c",
+      "paths": 752,
+      "files": 662,
+      "dirs": 90,
+      "git_matched": 34,
+      "git_ignored": 23,
+      "mismatches": 0,
+      "witnesses": []
+    }
+  ],
+  "total_paths": 1245,
+  "total_matched": 84,
+  "total_mismatches": 0,
+  "ok": true
+}

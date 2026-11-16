@@ -1,0 +1,372 @@
+{
+  "generated_at": "2026-11-16T18:07:34.358874+00:00",
+  "python": "3.12.3",
+  "git": "git version 2.43.0",
+  "kernel": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "repos": 16,
+  "unique_paths_sha256": 2817,
+  "unique_paths_definition": "sha256(seed + NUL + repo_relative_path), one per (repo, path)",
+  "total_paths_checked": 2817,
+  "total_files": 2545,
+  "total_dirs": 272,
+  "git_matched": 942,
+  "git_ignored": 898,
+  "mismatches": 0,
+  "per_repo": [
+    {
+      "seed": 0,
+      "paths": 176,
+      "files": 159,
+      "dirs": 17,
+      "git_matched": 65,
+      "git_ignored": 62,
+      "mismatches": 0,
+      "rule_files": 3,
+      "rules": 16,
+      "negations": 6,
+      "dead_rules": 3
+    },
+    {
+      "seed": 1,
+      "paths": 175,
+      "files": 158,
+      "dirs": 17,
+      "git_matched": 52,
+      "git_ignored": 50,
+      "mismatches": 0,
+      "rule_files": 2,
+      "rules": 15,
+      "negations": 4,
+      "dead_rules": 2
+    },
+    {
+      "seed": 2,
+      "paths": 177,
+      "files": 160,
+      "dirs": 17,
+      "git_matched": 50,
+      "git_ignored": 46,
+      "mismatches": 0,
+      "rule_files": 4,
+      "rules": 20,
+      "negations": 9,
+      "dead_rules": 5
+    },
+    {
+      "seed": 3,
+      "paths": 176,
+      "files": 159,
+      "dirs": 17,
+      "git_matched": 47,
+      "git_ignored": 45,
+      "mismatches": 0,
+      "rule_files": 3,
+      "rules": 15,
+      "negations": 5,
+      "dead_rules": 3
+    },
+    {
+      "seed": 4,
+      "paths": 177,
+      "files": 160,
+      "dirs": 17,
+      "git_matched": 50,
+      "git_ignored": 46,
+      "mismatches": 0,
+      "rule_files": 4,
+      "rules": 18,
+      "negations": 9,
+      "dead_rules": 5
+    },
+    {
+      "seed": 5,
+      "paths": 176,
+      "files": 159,
+      "dirs": 17,
+      "git_matched": 79,
+      "git_ignored": 77,
+      "mismatches": 0,
+      "rule_files": 3,
+      "rules": 16,
+      "negations": 4,
+      "dead_rules": 2
+    },
+    {
+      "seed": 6,
+      "paths": 176,
+      "files": 159,
+      "dirs": 17,
+      "git_matched": 80,
+      "git_ignored": 79,
+      "mismatches": 0,
+      "rule_files": 3,
+      "rules": 19,
+      "negations": 6,
+      "dead_rules": 5
+    },
+    {
+      "seed": 7,
+      "paths": 175,
+      "files": 158,
+      "dirs": 17,
+      "git_matched": 27,
+      "git_ignored": 22,
+      "mismatches": 0,
+      "rule_files": 2,
+      "rules": 12,
+      "negations": 7,
+      "dead_rules": 2
+    },
+    {
+      "seed": 8,
+      "paths": 175,
+      "files": 158,
+      "dirs": 17,
+      "git_matched": 47,
+      "git_ignored": 44,
+      "mismatches": 0,
+      "rule_files": 2,
+      "rules": 12,
+      "negations": 5,
+      "dead_rules": 2
+    },
+    {
+      "seed": 9,
+      "paths": 177,
+      "files": 160,
+      "dirs": 17,
+      "git_matched": 75,
+      "git_ignored": 73,
+      "mismatches": 0,
+      "rule_files": 4,
+      "rules": 20,
+      "negations": 6,
+      "dead_rules": 4
+    },
+    {
+      "seed": 10,
+      "paths": 175,
+      "files": 158,
+      "dirs": 17,
+      "git_matched": 78,
+      "git_ignored": 77,
+      "mismatches": 0,
+      "rule_files": 2,
+      "rules": 17,
+      "negations": 5,
+      "dead_rules": 4
+    },
+    {
+      "seed": 11,
+      "paths": 176,
+      "files": 159,
+      "dirs": 17,
+      "git_matched": 61,
+      "git_ignored": 60,
+      "mismatches": 0,
+      "rule_files": 3,
+      "rules": 18,
+      "negations": 5,
+      "dead_rules": 4
+    },
+    {
+      "seed": 12,
+      "paths": 177,
+      "files": 160,
+      "dirs": 17,
+      "git_matched": 81,
+      "git_ignored": 77,
+      "mismatches": 0,
+      "rule_files": 4,
+      "rules": 18,
+      "negations": 6,
+      "dead_rules": 2
+    },
+    {
+      "seed": 13,
+      "paths": 177,
+      "files": 160,
+      "dirs": 17,
+      "git_matched": 41,
+      "git_ignored": 37,
+      "mismatches": 0,
+      "rule_files": 4,
+      "rules": 16,
+      "negations": 6,
+      "dead_rules": 2
+    },
+    {
+      "seed": 14,
+      "paths": 177,
+      "files": 160,
+      "dirs": 17,
+      "git_matched": 68,
+      "git_ignored": 65,
+      "mismatches": 0,
+      "rule_files": 4,
+      "rules": 20,
+      "negations": 8,
+      "dead_rules": 5
+    },
+    {
+      "seed": 15,
+      "paths": 175,
+      "files": 158,
+      "dirs": 17,
+      "git_matched": 41,
+      "git_ignored": 38,
+      "mismatches": 0,
+      "rule_files": 2,
+      "rules": 14,
+      "negations": 6,
+      "dead_rules": 3
+    }
+  ],
+  "dead_rules": {
+    "found": 53,
+    "by_kind": {
+      "dead_by_later_ignore": 17,
+      "dead_by_parent": 36
+    },
+    "confirmed_by_git": 53,
+    "unconfirmed": 0,
+    "examples": [
+      {
+        "repo_seed": 0,
+        "kind": "dead_by_parent",
+        "rule": {
+          "source": ".gitignore",
+          "line": 2,
+          "pattern": "!sub/deep/ok.txt",
+          "negated": true,
+          "dir_only": false
+        },
+        "witness": "sub/deep/ok.txt",
+        "git_decided_by": {
+          "source": ".gitignore",
+          "line": 7,
+          "pattern": "sub/deep/"
+        },
+        "confirmed_by_git": true
+      },
+      {
+        "repo_seed": 0,
+        "kind": "dead_by_parent",
+        "rule": {
+          "source": ".gitignore",
+          "line": 12,
+          "pattern": "!build/keep.txt",
+          "negated": true,
+          "dir_only": false
+        },
+        "witness": "build/keep.txt",
+        "git_decided_by": {
+          "source": ".gitignore",
+          "line": 13,
+          "pattern": "build/"
+        },
+        "confirmed_by_git": true
+      },
+      {
+        "repo_seed": 0,
+        "kind": "dead_by_parent",
+        "rule": {
+          "source": "foo/.gitignore",
+          "line": 2,
+          "pattern": "!x/y/bar",
+          "negated": true,
+          "dir_only": false
+        },
+        "witness": "foo/x/y/bar",
+        "git_decided_by": {
+          "source": "foo/.gitignore",
+          "line": 1,
+          "pattern": "x/"
+        },
+        "confirmed_by_git": true
+      },
+      {
+        "repo_seed": 1,
+        "kind": "dead_by_parent",
+        "rule": {
+          "source": ".gitignore",
+          "line": 11,
+          "pattern": "!build/keep.txt",
+          "negated": true,
+          "dir_only": false
+        },
+        "witness": "build/keep.txt",
+        "git_decided_by": {
+          "source": ".gitignore",
+          "line": 6,
+          "pattern": "build/"
+        },
+        "confirmed_by_git": true
+      },
+      {
+        "repo_seed": 1,
+        "kind": "dead_by_parent",
+        "rule": {
+          "source": "docs/.gitignore",
+          "line": 2,
+          "pattern": "!tmp/keep.md",
+          "negated": true,
+          "dir_only": false
+        },
+        "witness": "docs/tmp/keep.md",
+        "git_decided_by": {
+          "source": "docs/.gitignore",
+          "line": 1,
+          "pattern": "tmp/"
+        },
+        "confirmed_by_git": true
+      },
+      {
+        "repo_seed": 2,
+        "kind": "dead_by_later_ignore",
+        "rule": {
+          "source": ".gitignore",
+          "line": 6,
+          "pattern": "!notes.tmp",
+          "negated": true,
+          "dir_only": false
+        },
+        "witness": "notes.tmp",
+        "git_decided_by": {
+          "source": ".gitignore",
+          "line": 7,
+          "pattern": "*.tmp"
+        },
+        "confirmed_by_git": true
+      }
+    ]
+  },
+  "throughput": {
+    "passes": 3,
+    "decisions_per_sec_median": 11098.3,
+    "decisions_per_sec_samples": [
+      11310.3,
+      11098.3,
+      10350.2
+    ]
+  },
+  "counterexample": {
+    "repo_seed": 0,
+    "kind": "dead_by_parent",
+    "rule": {
+      "source": ".gitignore",
+      "line": 2,
+      "pattern": "!sub/deep/ok.txt",
+      "negated": true,
+      "dir_only": false
+    },
+    "witness": "sub/deep/ok.txt",
+    "git_decided_by": {
+      "source": ".gitignore",
+      "line": 7,
+      "pattern": "sub/deep/"
+    },
+    "confirmed_by_git": true
+  },
+  "ok": true
+}
